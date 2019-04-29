@@ -1,0 +1,15 @@
+header {
+  width: 100vw;
+  height: 8vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+header nav div {
+  cursor: pointer;
+}
