@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Todo } from '../types/Todo';
+import todos from './mockTodos';
 
 @Component({
   selector: 'app-todo-container',
@@ -7,10 +7,5 @@ import { Todo } from '../types/Todo';
   styleUrls: ['./todo-container.component.css']
 })
 export class TodoContainerComponent implements OnInit {
-  todo: Todo = {
-    id: 1,
-    text: 'Sleep',
-    completed: false
-  };
   ngOnInit() {}
 }
