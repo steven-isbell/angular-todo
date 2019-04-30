@@ -1,6 +1,6 @@
 import { Todo } from '../types/Todo';
 
-const todos: Todo[] = [
+export const todos: Todo[] = [
   {
     id: 1,
     text: 'Sleep',
@@ -22,5 +22,3 @@ const todos: Todo[] = [
     completed: false
   }
 ];
-
-export default todos;

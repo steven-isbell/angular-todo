@@ -1,14 +1,7 @@
 <h1>Todos</h1>
 
-<div>
-  <ol>
-    <li>{{ todo.text }}</li>
-  </ol>
-</div>
-
-<div>
-  <label>
-    Update Todo:
-    <input [(ngModel)]="todo.text" placeholder="name" />
-  </label>
-</div>
+<ul class="todos">
+  <li *ngFor="let todo of todos">
+    <span class="badge">{{ todo.id }}</span> {{ todo.text }}
+  </li>
+</ul>
