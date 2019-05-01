@@ -8,8 +8,5 @@ import { Todo } from './types/Todo';
 })
 export class TodoService {
   constructor() {}
-  // getTodos(): Todo[] {
-  //   return todos;
-  // }
   todos: Todo[] = todos;
 }

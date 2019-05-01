@@ -1,4 +1,7 @@
 <div>
-  <input [(ngModel)]="newTodo.text" />
+  <input
+    [(ngModel)]="newTodo.text"
+    (keydown)="handleKeypress($event, newTodo.text)"
+  />
   <button (click)="addTodo(newTodo.text)">Add Todo</button>
 </div>
