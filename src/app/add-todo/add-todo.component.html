@@ -1,3 +1,4 @@
-<p>
-  add-todo works!
-</p>
+<div>
+  <input [(ngModel)]="newTodo.text" />
+  <button (click)="addTodo(newTodo.text)">Add Todo</button>
+</div>
