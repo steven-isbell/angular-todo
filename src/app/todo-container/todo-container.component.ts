@@ -20,6 +20,6 @@ export class TodoContainerComponent implements OnInit {
     this.todos[itemIndex].completed = !this.todos[itemIndex].completed;
   }
   getTodos(): void {
-    this.todos = this.todoService.getTodos();
+    this.todos = this.todoService.todos;
   }
 }
